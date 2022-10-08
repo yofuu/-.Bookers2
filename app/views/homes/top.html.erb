@@ -1,6 +1,6 @@
 <h1>Topページ</h1>
 
-<body>
+
 <main>
     <p id="notice"></p>
     <div class="container">
@@ -20,16 +20,13 @@
                 <p> about various books!</p>
                 <div class="btn-wrapper col-10 mx-auto">
                     <div class="row">
-                        <%= link_to class:"btn btn-info btn-sm btn-block mb-3 sign_in" %>
-                        Log in
+                        <%= link_to "Log in",new_user_session_path, class:"btn btn-info btn-sm btn-block mb-3 sign_in" %>
                     </div>
                     <div class="row">
-                        <%= link_to class:"btn btn-success btn-sm btn-block sign_up" %>
-                        Sign up
+                        <%= link_to "Sign up",new_user_registration_path, class:"btn btn-success btn-sm btn-block sign_up" %>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </main>
-</body>
