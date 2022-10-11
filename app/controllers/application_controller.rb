@@ -16,6 +16,8 @@ class ApplicationController < ActionController::Base
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:email])
   end
+  
+  add_flash_types :success, :info, :warning, :danger
 
   private
 
