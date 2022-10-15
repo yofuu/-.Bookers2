@@ -15,4 +15,7 @@ has_one_attached :profile_image
     profile_image.variant(resize_to_limit: [width, heigth]).processed
   end
 
+  validates :name, presence: true
+  validates :introduction, presence: true
+
 end
