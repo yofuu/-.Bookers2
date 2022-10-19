@@ -6,9 +6,10 @@
     <% end %>
   </ul>
 <% end %>
-
+<div class="col-md-3">
 <%= render 'users/user_info', {user: current_user, book: @book_new} %>
-
+</div>
+<div class="col-md-9">
      <p id="notice"></p>
 
 <h1>Books</h1>
@@ -40,3 +41,4 @@
     <% end %>
   </tbody>
 </table>
+</div>
