@@ -24,11 +24,11 @@ class UsersController < ApplicationController
     end
   end
 
-  def user_params
-    params.require(:user).permit(:name, :image, :introduction)
-  end
-
   private
+
+  def user_params
+    params.require(:user).permit(:name, :profile_image, :introduction)
+  end
 
   def ensure_user
     @user = User.find_by(id: params[:id])
